@@ -94,83 +94,100 @@
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: red;
 }
 .blueAreas {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: blue;
 }
 .greenAreas {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: green;
 }
 .p3000 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: #ff8080;
 }
 .p2800 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
-	background-color: #000066;
+	padding-bottom: 0px;
+	background-color: #4682B4;
 }
 .p2500 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
-	background-color: #ffc266;
+	padding-bottom: 0px;
+	background-color: #FFA500;
 }
 .p2200 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: #836c93;
 }
 .p2000 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
-	background-color: #40bf40;
+	padding-bottom: 0px;
+	background-color: #00FF00;
 }
 .p1800 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: #ffff00;
 }
 .p1500 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
-	background-color: #b3ccff;
+	padding-bottom: 0px;
+	background-color: #E0FFFF;
 }
 .p1200 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
+	padding-bottom: 0px;
 	background-color: #999999;
 }
 .p1000 {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-top: 5px;
-	padding-down: 0px;
-	background-color: #008000;
+	padding-bottom: 0px;
+	background-color: #2E8B57;
+}
+#priceTag.middleTable td
+{
+	border: 0px solid black;
+}
+#priceTag.middleTable span
+{
+	/*margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;*/
+	margin: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: 1px solid black;
 }
