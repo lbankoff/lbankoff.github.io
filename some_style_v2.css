@@ -27,8 +27,8 @@
 {
 	position: absolute; 
 	top: 80px; 
-	/*left: 48.8%;*/
-	left: 48vw;
+	left: 48.8%;
+	/*left: 48vw;*/
 	text-align: right;
 }
 .middleTable td
@@ -42,8 +42,8 @@
 {
 	position: absolute;
 	top: 80px;
-	/*right: 52%;*/
-	right: 60vw;
+	right: 52%;
+	/*right: 60vw;*/
 	/*border: 8px solid #E6E6FA;*/
 }
 .leftSideTable td
@@ -75,8 +75,8 @@
 {
 	position: absolute; 
 	top: 80px; 
-	/*left: 52%;*/
-	left: 60vw;
+	left: 52%;
+	/*left: 60vw;*/
 	/*border: 8px solid #FFE4B5;*/
 }
 .rightSideTable td
