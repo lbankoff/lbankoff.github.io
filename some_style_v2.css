@@ -4,60 +4,52 @@
 	top: 5px;
 	left: 5px;
 	/*width: 1890px;*/
-	width: 1400px;
+	width: 1500px;
 	height: 1000px;
-	overflow: auto;
+}
+@media only screen and (min-width: 1200px)
+{
+	#Container
+	{
+		top: 5px;
+		left: 0%;
+		/*overflow: auto;*/
+	}
 }
 @media only screen and (min-width: 1400px)
 {
 	#Container
 	{
-		position: absolute;
 		top: 5px;
 		left: 3%;
-		/*width: 1890px;*/
-		width: 1400px;
-		height: 1000px;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 @media only screen and (min-width: 1600px)
 {
 	#Container
 	{
-		position: absolute;
 		top: 5px;
 		left: 6%;
-		/*width: 1890px;*/
-		width: 1400px;
-		height: 1000px;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 @media only screen and (min-width: 1700px)
 {
 	#Container
 	{
-		position: absolute;
 		top: 5px;
 		left: 8%;
-		/*width: 1890px;*/
-		width: 1400px;
-		height: 1000px;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 @media only screen and (min-width: 1900px)
 {
 	#Container
 	{
-		position: absolute;
 		top: 5px;
 		left: 15%;
-		/*width: 1890px;*/
-		width: 1400px;
-		height: 1000px;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 .button {
@@ -253,6 +245,20 @@
 	padding-bottom: 0px;
 	background-color: #2E8B57;
 }
+.p800 {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	background-color: #c266ff;
+}
+.p600 {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	background-color: #FDE3BC;
+}
 #priceTag
 {
     top: 625px;
@@ -306,4 +312,158 @@
 	top: 720px;
 	left: 1010px;
 	/*left: 67%;*/
+}
+.customButton {
+  font: bold 20px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  /*padding: 20px 60px 20px 60px;*/
+  padding-left: 40px;
+  padding-right: 40px;
+  width: auto;
+  height: 3.6em;
+  border-top: 2px solid #CCCCCC;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #CCCCCC;
+  text-align: center;
+  position: relative;
+  top: -3.6em;
+}
+.customButton:focus {
+  background-color: gray;
+  /*color: white;*/
+  /*visibility: hidden;*/
+}
+#BellDisplay
+{
+	position: relative;
+	top: -150px;
+	left: 50px;
+}
+#BellDisplay #bottomLeftTable 
+{
+	left: -50px;
+}
+#BellDisplay #priceTag.middleTable span
+{
+	border: 2px solid black;
+	white-space:pre;
+	padding: 20px;
+	font: bold 18px Arial;
+}
+#BellDisplay #priceTag.middleTable td
+{
+	padding-top: 50px;
+}
+.Lays
+{
+	/*border: 1px solid gray;*/
+	/*margin-bottom: 20px;*/
+}
+.Lays .button
+{
+	/*padding-left: 4px;
+	padding-right: 4px;*/
+	/*margin: -5px;
+	width: 28px;
+	height: 28px;
+	text-align: right;
+	border: 1px solid black;*/
+	width: 24px;
+	height: 24px;
+	margin: -3px;
+	text-align: right;
+}
+.Lays td
+{
+	/*border: 1px solid gray;*/
+	text-align: center;
+	/*overflow: hidden;*/
+}
+#bigLayLeft
+{
+	/*position: absolute;
+	top: 520px;
+	left: 20px;*/
+}
+#bigLayRight
+{
+	/*position: absolute;
+	top: 520px;
+	left: 1290px;*/
+}
+#smallLayLeft
+{
+	/*position: absolute;
+	top: 200px;
+	left: 200px;*/
+}
+#smallLayRight
+{
+	/*position: absolute;
+	top: 200px;
+	left: 500px;*/
+}
+#cwTurn
+{
+	/*float: right;
+	position: relative;
+	top: -1px;
+	left: 8px;*/
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+	-o-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+	-ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+#ccwTurn
+{
+	/*float: right;
+	position: relative;
+	top: -1px;
+	left: 8px;*/
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+	-o-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+	-ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+.unionTable
+{
+	/*border: 2px solid pink;*/
+	position: absolute;
+	top: 170px;
+}
+.unionTable table
+{
+	margin-bottom: 5px;
+	/*float: right;*/
+}
+#uTLeft
+{
+	left: 20px;
+}
+#uTLeft table
+{
+	float: right;
+}
+#uTRight
+{
+	left: 1290px;
+}
+#uTRight table
+{
+	float: left;
 }

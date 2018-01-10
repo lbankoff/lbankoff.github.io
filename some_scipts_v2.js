@@ -1,5 +1,128 @@
 ﻿var price = document.getElementById("Price Value");
-  
+var bState = 'Parter';
+
+function stateChange(new_state)
+{
+	bState = new_state;
+	
+	if(bState == 'Parter')
+	{
+		document.getElementById("Parter").style.background = '#004422';
+		document.getElementById("Parter").style.color = 'white';
+		document.getElementById("Bell").style.background = 'white';
+		document.getElementById("Bell").style.color = 'black';
+		document.getElementById('ParterDisplay').style.display='block';
+		document.getElementById('BellDisplay').style.display='none';
+	}
+	else if(bState == 'Bell')
+	{
+		document.getElementById("Parter").style.background = 'white';
+		document.getElementById("Parter").style.color = 'black';
+		document.getElementById("Bell").style.background = '#004422';
+		document.getElementById("Bell").style.color = 'white';
+		document.getElementById('ParterDisplay').style.display='none';
+		document.getElementById('BellDisplay').style.display='block';
+	}
+	else
+	{
+		document.getElementById("Parter").style.background = 'white';
+		document.getElementById("Bell").style.background = 'white';
+		document.getElementById("Parter").style.color = 'black';
+		document.getElementById("Bell").style.color = 'black';
+		document.getElementById('ParterDisplay').style.display='none';
+		document.getElementById('BellDisplay').style.display='none';
+	}
+}
+
+function GetPriceLay(seat, lay)
+{
+	
+	if(lay == 8 || lay == 16)
+		document.getElementById("Price Value").innerHTML = "Ложа - " + lay + ". Место - " + seat + ". Стоимость билета - 1000 рублей.";
+	else
+		document.getElementById("Price Value").innerHTML = "Ложа - " + lay + ". Место - " + seat + ". Стоимость билета - 1500 рублей.";
+}
+
+function GetPriceBell(seat, row)
+{
+	if(row == 01)
+	{
+		if(seat >= 01 && seat <= 10 || seat >= 35 && seat <= 44)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else if(seat >= 11 && seat <= 34)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 1000 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 02)
+	{
+		if(seat >= 01 && seat <= 11 || seat >= 37 && seat <= 47)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else if(seat >= 12 && seat <= 36)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 1000 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 03)
+	{
+		if(seat >= 01 && seat <= 11 || seat >= 37 && seat <= 47)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else if(seat >= 12 && seat <= 36)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 1000 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 04)
+	{
+		if(seat >= 01 && seat <= 44)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 05)
+	{
+		if(seat >= 01 && seat <= 46)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 06)
+	{
+		if(seat >= 01 && seat <= 46)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 07)
+	{
+		if(seat >= 01 && seat <= 46)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 08)
+	{
+		if(seat >= 01 && seat <= 46)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 09)
+	{
+		if(seat >= 01 && seat <= 46)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 800 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+	if(row == 10)
+	{
+		if(seat >= 01 && seat <= 60)
+			document.getElementById("Price Value").innerHTML = "Ряд - " + row + ". Место - " + seat + ". Стоимость билета - 600 рублей.";
+		else
+			document.getElementById("Price Value").innerHTML = "Выберите ряд и место, чтобы узнать цену";
+	}
+}
+
 function GetPrice(seat, row)
 {
 	if(row == 01)
